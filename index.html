@@ -5,14 +5,20 @@
 		<script>
 			function getData(){
 				let txt = document.getElementById("day");
-				alert("getData() " +txt.value);
+				let txt2 = document.getElementById("name");
+				let txt3 = document.getElementById("age");
+				alert("getData() " +txt.value+" "+txt2.value+" "+txt3.value);
 			}
 		</script>
 	</head>
 	<body>
 		<form action="action_page.php">
 			<label for="day">Day of week:</label>
-			<input type="day" id="day" name="day"><br>
+			<input type="text" id="day" name="day"><br>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"><br>
+			<label for="age">Age:</label>
+			<input type="text" id="age" name="age"><br>
 		</form>
 		<button type="button" onclick="getData()">submit</button>
 	</body>
